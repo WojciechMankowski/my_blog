@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Blog o programowaniu</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Załączenie arkusza stylów -->
+</head>
+<body>
+    <header class="header">
+    <div class="logo">
+    
+     <img src="./logo.png" alt="Logo programista wijciech" id="logo">
+     <h1>Blog programista Wojciech</h1>  
+    </div>
+     <nav class="menu">
+       <ul>
+         <li><a href="index.html">Strona główna</a></li>
+         <li><a href="articles.html">Artykuły</a></li>
+         <li><a href="about.html">O mnie</a></li>
+         <li><a href="contact.html">Kontakt</a></li>
+       </ul>
+     </nav>
+ </header>
+    <section class="container_form">
+        
+            <h2>Skontaktuj się z nami</h2>
+            <p>Masz pytania lub sugestie? Napisz do nas!</p>
+            <p>Uzupełnij formulasz kontaktowy lub napisz na tego e-maila expale@gmail.com</p>
+            <div class="form">
+            <form action="#" method="post">
+                <label for="name">Imię:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Wiadomość:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="submit" value="Wyślij">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div >
+          <p>
+            &copy; 2024 Blog programista Wojciech. Wszelkie prawa zastrzeżone.
+          </p>
+        </div>
+      </footer>
+</body>
+</html>
