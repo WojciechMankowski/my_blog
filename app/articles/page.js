@@ -1,22 +1,16 @@
-import { data } from './article'
-import Link from 'next/link'
+import { data } from './data'
+import { Aricle } from '../components/aricle'
+
 const articles = () => (
 	<section className="container">
-		{data.map(article => {
+		{data.map(articleData => {
 			return (
-				<div>
-					<div className="title">
-						<h2>{article['title']}</h2>
-						<p className="meta">
-							Autor: {article['author']}| Data: {article['date']}
-						</p>
-					</div>
-					<p className="content">{article['content']}</p>
-					<button className="btn">Czytaj więcej</button>
-					<p className="comments">
-						<Link href="#" className='comennts'>Komentarze ({article['commentsCount']})</Link>
-					</p>
-				</div>
+				<Aricle
+					title={articleData.title}
+					author={articleData.author}
+					content={articleData.content}
+					commentsCount={articleData.commentsCount}
+				/>
 			)
 		})}
 	</section>
