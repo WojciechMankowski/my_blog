@@ -2,15 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-	--primary-color: #f2a922;
-	--secondary-color: #6ac4d9;
-	--accent-color: #f29188;
-	--background-color: #f2f2f2;
-	--text-color: #6b5873;
-}
-
-
-body {
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-}

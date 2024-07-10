@@ -1,17 +1,18 @@
 import { data } from './articles/data'
-import { Aricle } from './components/aricle'
+import { Article } from './components/aricle'
 
 export default function Home() {
 	return (
 		<section className="w-4/5 p-5 flex flex-col justify-center items-center">
-			{data.map((articleData, id) => {
+			{data.map((articleData, ids) => {
 				return (
-					<Aricle
+					<Article
 						title={articleData.title}
 						author={articleData.author}
 						content={articleData.content}
+						date={articleData.date}
 						commentsCount={articleData.commentsCount}
-						id
+						id={ids}
 					/>
 				)
 			})}

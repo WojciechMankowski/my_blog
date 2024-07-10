@@ -1,22 +1,20 @@
 import { data } from './data'
-import { Aricle } from '../components/aricle'
+import { Article } from '../components/aricle'
 
-const articles = () => (
+const Articles = () => (
 	<section className="w-4/5 p-5 flex flex-col justify-center items-center">
-		{data.map((articleData, id) => {
-			return (
-				<Aricle
-					title={articleData.title}
-					author={articleData.author}
-					content={articleData.content}
-					mb-6
-					mt-4
-					p-4Count={articleData.commentsCount}
-					id={id}
-				/>
-			)
-		})}
+		{data.map((articleData, id) => (
+			<Article
+				key={id} // Dodaj klucz key dla każdego elementu w mapowaniu
+				title={articleData.title}
+				author={articleData.author}
+				content={articleData.content}
+				commentsCount={articleData.commentsCount}
+				id={id}
+				
+			/>
+		))}
 	</section>
 )
 
-export default articles
+export default Articles
