@@ -11,10 +11,17 @@ module.exports = {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 				'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
 			},
+			colors: {
+				primary: '#f2a922',
+				secondary: '#6ac4d9',
+				accent: '#f29188',
+				background: '#f2f2f2',
+				text: '#6b5873',
+			},
 		},
 	},
-	plugins: [require('daisyui')],
-	daisyui: {
-		themes: ['light', 'dark', 'cupcake'],
-	},
+	// 	plugins: [require('daisyui')],
+	// 	daisyui: {
+	// 		themes: ['light', 'dark', 'cupcake', 'cyperpunl'],
+	// 	},
 }

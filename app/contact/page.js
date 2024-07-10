@@ -1,6 +1,6 @@
 const contact = () => (
-	<section className="container_form">
-		<h2>Skontaktuj się z nami</h2>
+	<section className="w-4/5 p-5 flex flex-col justify-center items-center_form">
+		<h2 className="text-2xl font-medium text-gray-700">Skontaktuj się z nami</h2>
 		<p>Masz pytania lub sugestie? Napisz do nas!</p>
 		<p>Uzupełnij formulasz kontaktowy lub napisz na tego e-maila expale@gmail.com</p>
 		<div className="form">

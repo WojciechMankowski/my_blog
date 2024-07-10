@@ -1,7 +1,7 @@
 const about = () => (
-	<section className="container">
-		<div className="container">
-			<h2>Witaj, jestem Wojciech!</h2>
+	<section className="w-4/5 p-5 flex flex-col justify-center items-center">
+		<div className="w-4/5 p-5 flex flex-col justify-center items-center">
+			<h2 className="text-2xl font-medium text-gray-700">Witaj, jestem Wojciech!</h2>
 			<img src="./assets/moje zdjęcie.png" alt="Zdjęcie Wojciecha" />
 			<p>
 				Cześć! Nazywam się Wojciech i jestem pasjonatem programowania. Od kilku lat zajmuję się tworzeniem aplikacji
